@@ -7,10 +7,18 @@ import YourList from './YourList.vue';
 export default {
     data() {
         return {
-            ingredients: ['Garlic', 'Butter', 'Oregano']
+            ingredients: [] as string[]
         };
     },
-    components: { SelectIngredients, Tag, YourList }
+    components: { SelectIngredients, Tag, YourList },
+    methods: {
+        addIngredient(ingredient: string) {
+            this.ingredients.push(ingredient)
+        },
+        removeIngredient(ingredient: string) {
+            this.ingredients = this.ingredients.filter(iList => ingredient !== iList);
+        }
+    }
 }
 </script>
 
@@ -18,7 +26,7 @@ export default {
     <main class="main-content">
         <YourList :ingredients/>
 
-        <SelectIngredients />
+        <SelectIngredients @add-ingredient="addIngredient" @remove-ingredient="removeIngredient" />
     </main>
 </template>
 
