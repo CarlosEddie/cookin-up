@@ -2,12 +2,13 @@
 import type ICategory from '@/interfaces/ICategory';
 import type { PropType } from 'vue';
 import Tag from './Tag.vue';
+import SelectedIngredient from './SelectedIngredient.vue';
 
 export default {
     props: {
         category: { type: Object as PropType<ICategory>, required: true }
     },
-    components: { Tag }
+    components: { Tag, SelectedIngredient }
 }
 </script>
 
@@ -19,11 +20,11 @@ export default {
                 {{ category.name }}
             </h2>
         </header>
-        <div class="category__ingredients">
+        <ul class="category__ingredients">
             <li v-for="ingredient in category.ingredients" :key="ingredient">
-                <Tag :text="ingredient" />
+                <SelectedIngredient :ingredient="ingredient" />
             </li>
-        </div>
+        </ul>
     </article>
 </template>
 
