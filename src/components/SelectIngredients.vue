@@ -13,7 +13,7 @@ export default {
         this.categories = await getCategories();
     },
     components: { CardCategory, MainButton },
-    emits: ['addIngredient', 'removeIngredient']
+    emits: ['addIngredient', 'removeIngredient', 'searchRecipes']
 }
 </script>
 
@@ -37,7 +37,7 @@ export default {
             *Attention: we assume you have salt, pepper and water at home.
         </p>
 
-        <MainButton text="Search Recipes!" />
+        <MainButton text="Search Recipes!" @click="$emit('searchRecipes')" />
     </section>
 </template>
 
