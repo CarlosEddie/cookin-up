@@ -1,6 +1,6 @@
 <template>
     <footer class="footer paragraph">
-        Developed by Carlos | 2023 - Fictional non-commercial project.
+        Developed by Carlos | 2024 - Fictional non-commercial project.
     </footer>
 </template>
 
