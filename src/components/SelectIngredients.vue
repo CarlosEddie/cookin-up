@@ -2,6 +2,7 @@
 import { getCategories } from '@/http/index';
 import type ICategory from '@/interfaces/ICategory';
 import CardCategory from './CardCategory.vue';
+import MainButton from './MainButton.vue';
 export default {
     data() {
         return {
@@ -11,7 +12,7 @@ export default {
     async created() {
         this.categories = await getCategories();
     },
-    components: { CardCategory },
+    components: { CardCategory, MainButton },
     emits: ['addIngredient', 'removeIngredient']
 }
 </script>
@@ -35,6 +36,8 @@ export default {
         <p class="paragraph tip">
             *Attention: we assume you have salt, pepper and water at home.
         </p>
+
+        <MainButton text="Search Recipes!" />
     </section>
 </template>
 

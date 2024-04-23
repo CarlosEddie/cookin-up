@@ -1,16 +1,16 @@
 :root {
---ocher: #D1451E;
-   --coral: #F0633C;
-   --light-coral: #FFDBD1;
-   --cream: #FFFAF3;
-   --dark-green: #263A29;
-   --medium-green: #3D6D4A;
-   --gray: #444444;
-   --light-gray: #EFEFEF;
-   --blank: #FFF;
+  --ocher: #D1451E;
+  --coral: #F0633C;
+  --light-coral: #FFDBD1;
+  --cream: #FFFAF3;
+  --dark-green: #263A29;
+  --medium-green: #3D6D4A;
+  --gray: #444444;
+  --light-gray: #EFEFEF;
+  --blank: #FFF;
 
-  --font-family-default: Nunito Sans, sans-serif;
-  --headers: Paytone One, sans-serif;
+--font-family-default: Nunito Sans, sans-serif;
+--headers: Paytone One, sans-serif;
 }
 
 *,
