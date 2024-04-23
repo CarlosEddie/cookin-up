@@ -32,10 +32,11 @@ export default {
 <template>
     <main class="main-content">
         <YourList :ingredients/>
-
-        <SelectIngredients v-if="content === 'SelectIngredients'" @add-ingredient="addIngredient" @remove-ingredient="removeIngredient" @search-recipes="navigate('ShowRecipes')"/>
+        <KeepAlive include="SelectIngredients" >
+            <SelectIngredients v-if="content === 'SelectIngredients'" @add-ingredient="addIngredient" @remove-ingredient="removeIngredient" @search-recipes="navigate('ShowRecipes')"/>
         
-        <ShowRecipes v-else-if="content === 'ShowRecipes'" @edit-recipes="navigate('SelectIngredients')"/>
+            <ShowRecipes v-else-if="content === 'ShowRecipes'" @edit-recipes="navigate('SelectIngredients')"/>
+        </KeepAlive>
     </main>
 </template>
 

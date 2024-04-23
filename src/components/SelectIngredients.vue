@@ -4,6 +4,7 @@ import type ICategory from '@/interfaces/ICategory';
 import CardCategory from './CardCategory.vue';
 import MainButton from './MainButton.vue';
 export default {
+    name: 'SelectIngredients',
     data() {
         return {
             categories: [] as ICategory[]
