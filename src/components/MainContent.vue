@@ -35,7 +35,7 @@ export default {
         <KeepAlive include="SelectIngredients" >
             <SelectIngredients v-if="content === 'SelectIngredients'" @add-ingredient="addIngredient" @remove-ingredient="removeIngredient" @search-recipes="navigate('ShowRecipes')"/>
         
-            <ShowRecipes v-else-if="content === 'ShowRecipes'" @edit-recipes="navigate('SelectIngredients')"/>
+            <ShowRecipes :ingredients="ingredients" v-else-if="content === 'ShowRecipes'" @edit-recipes="navigate('SelectIngredients')"/>
         </KeepAlive>
     </main>
 </template>

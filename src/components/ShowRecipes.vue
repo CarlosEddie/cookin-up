@@ -1,10 +1,15 @@
 <script lang="ts">
+import type { PropType } from 'vue';
 import { getRecipes } from '@/http';
 import type IRecipe from '@/interfaces/IRecipe';
 import MainButton from './MainButton.vue';
 import CardRecipe from './CardRecipe.vue';
+import { list1ItemsAreInList2 } from '@/operations/lists';
 
 export default {
+    props: {
+        ingredients: {type: Array as PropType<string[]>, required: true}
+    },
     data() {
         return {
             foundRecipes: [] as IRecipe[]
@@ -13,7 +18,11 @@ export default {
     async created() {
         const recipes = await getRecipes();
 
-        this.foundRecipes = recipes.slice(0, 8);
+        this.foundRecipes = recipes.filter((recipes) => {
+            const canDoRecipe = list1ItemsAreInList2(recipes.ingredients, this.ingredients);
+
+            return canDoRecipe;
+        })
     },
     components: { MainButton, CardRecipe },
     emits: ['editRecipes']
