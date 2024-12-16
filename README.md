@@ -1,6 +1,12 @@
 # cookin-up
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-This template should help get you started developing with Vue 3 in Vite.
+## About the project
+The project presents a platform where users can select ingredients, edit them and search for recipes according to the selected ingredients.
+Technologies: Vue.js, TypeScript, Node.js, Vite
 
 ## Recommended IDE Setup
 
