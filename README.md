@@ -9,6 +9,14 @@ The project presents a platform where users can select ingredients, edit them an
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
+## Home Page
+![Home!](https://github.com/CarlosEddie/cookin-up/blob/67f82f001e1b3f6010d85edd38b71f8ed539f40b/src/assets/images/readmeImages/home1.png)
+![Home2!](https://github.com/CarlosEddie/cookin-up/blob/67f82f001e1b3f6010d85edd38b71f8ed539f40b/src/assets/images/readmeImages/home2.png)
+![Home3!](https://github.com/CarlosEddie/cookin-up/blob/67f82f001e1b3f6010d85edd38b71f8ed539f40b/src/assets/images/readmeImages/home3.png)
+
+## Recipes Found Page
+![RecipesFound!](https://github.com/CarlosEddie/cookin-up/blob/67f82f001e1b3f6010d85edd38b71f8ed539f40b/src/assets/images/readmeImages/recipeFound.png)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
