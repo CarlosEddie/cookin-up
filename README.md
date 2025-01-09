@@ -1,7 +1,7 @@
 # cookin-up
 
 ## About the project
-The project presents a platform where users can select ingredients, edit them and search for recipes according to the selected ingredients.
+This project presents a platform where users can select ingredients, edit them and search for recipes according to the selected ingredients.
 
 ## Technologies
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
