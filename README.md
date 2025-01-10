@@ -14,7 +14,7 @@ This project presents a platform where users can select ingredients, edit them a
 ![Home2!](https://github.com/CarlosEddie/cookin-up/blob/67f82f001e1b3f6010d85edd38b71f8ed539f40b/src/assets/images/readmeImages/home2.png)
 ![Home3!](https://github.com/CarlosEddie/cookin-up/blob/67f82f001e1b3f6010d85edd38b71f8ed539f40b/src/assets/images/readmeImages/home3.png)
 
-## Recipes Found Page
+## Recipes Results Page
 ![RecipesFound!](https://github.com/CarlosEddie/cookin-up/blob/67f82f001e1b3f6010d85edd38b71f8ed539f40b/src/assets/images/readmeImages/recipeFound.png)
 
 ## Recommended IDE Setup
