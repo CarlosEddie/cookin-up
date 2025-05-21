@@ -12,7 +12,6 @@
         Explore new recipes every day with ingredients at your fingertips!
       </p>
     </div>
-    <img src="../assets/images/banner-photo.png" alt="Photo of a woman cooking with a glass bowl in her hands. She is smiling and is holding a cell phone between her face and shoulder." class="banner-photo">
   </header>
 </template>
 
@@ -40,10 +39,6 @@
     color: var(--medium-green, #3D6D4A);
   }
 
-  .banner-photo {
-    width: 35rem;
-  }
-
   @media only screen and (max-width: 1300px) {
     .banner {
       padding: 4rem 3.75rem;
@@ -62,10 +57,6 @@
   @media only screen and (max-width: 767px) {
     .banner {
       padding: 4rem 1.5rem;
-    }
-
-    .banner-photo {
-      width: min(100%, 21.25rem);
     }
   }
 </style>
